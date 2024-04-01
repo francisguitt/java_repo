@@ -1,12 +1,13 @@
 package com.example;
 
+ // propriedades/atributos publicos
 public class Users {
     public String name;
     public String lastName;
     public int age;
 
-
-
+// comportamentos
+// methodos/funõess
     public String PrintName(){
         return this.name;
     }
