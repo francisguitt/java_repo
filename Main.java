@@ -1,52 +1,31 @@
-
-
-import java.util.Scanner;
+import com.example.Users;
 
 public class Main {
     public static void main(String[] args) {
 
-        // chama a o method da classe Lopps
-      Loops.loopsMethods();
+        // chama  o method da classe Lopps
+        Loops.loopsMethods();
 
+        // chama o method calculater
 
+        //Calculate.CalculateMethod();
 
-        //##########################
+        //instancia da classe
+        // objeto criado apartir da classe users
 
-        Scanner prompt = new Scanner(System.in);
-        System.out.println("------------Calculadora-----------");
+        Users users = new Users();
 
-        System.out.println("Digite um número");
-        int x = prompt.nextInt();
+        System.out.println("------------------------------");
+        users.age = 30;
+        users.name = "Jonh";
+        users.lastName = "Doe";
+        System.out.println("------------------------------");
 
-        prompt.nextLine();
-        System.out.println("Digite a operação");
-        String operation = prompt.nextLine();
+        System.out.println("Nome: " + users.PrintName());
+        System.out.println("Sobre Nome: " + users.PrintLastName());
+        System.out.println("Idade: " + users.PrintAge());
 
-        System.out.println("Digite o proximo  número");
-        int y = prompt.nextInt();
-
-        switch (operation) {
-            case "+":
-                Match.Addition(x, y);
-                break;
-
-            case "-":
-                Match.Subtration(x, y);
-                break;
-
-            case "*":
-                Match.Multiplication(x, y);
-                break;
-
-            case "/":
-                Match.Division(x, y);
-                break;
-
-            default:
-                String msg = "Operação invalida !";
-                System.out.println(msg);
-        }
-
+        System.out.println("------------------------------");
 
     }
 
