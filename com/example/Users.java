@@ -7,7 +7,7 @@ public class Users {
     public int age;
 
 // comportamentos
-// methodos/funõess
+// methodos/funõess publicas
     public String PrintName(){
         return this.name;
     }
