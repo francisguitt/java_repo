@@ -24,21 +24,19 @@ public class Loops {
         numbers.add(1);
         numbers.add(4);
 
-        System.out.println("------------Order-------------------------------");
+        //------------Order-------------------------------
         // Ordenação da lista de números
         Collections.sort(numbers);
-        System.out.println("-------------Order------------------------------");
+        //-------------Order------------------------------
 
-        System.out.println("-----------------For--------------------------");
+        //-----------------For--------------------------
         // Uso do loop for para imprimir todos os itens da lista
         for (int i = 0; i < list.size(); i++) {
             System.out.println("Lista: " + list.get(i));
         }
-        System.out.println("-----------------For--------------------------");
+        //-----------------For--------------------------
 
-        System.out.println("-------------------------------------------");
-
-        System.out.println("-----------------For each loop--------------------------");
+        //-----------------For each loop--------------------------
         // Uso do loop for each para imprimir todos os itens da lista
         for (String l : list) {
             System.out.println("Lista: " + l);
@@ -48,11 +46,10 @@ public class Loops {
         for (int n : numbers) {
             System.out.printf("%d%n ", n);
         }
-        System.out.println("-----------------For each loop--------------------------");
+        //-----------------For each loop--------------------------
 
-        System.out.println("------------------------------------------");
 
-        System.out.println("-----------------While--------------------------");
+//-----------------While--------------------------
         // Uso do loop while para imprimir todos os números da lista
         int j = 0;
         while (j < numbers.size()) {
@@ -66,11 +63,10 @@ public class Loops {
             System.out.println(list.get(k));
             k++;
         }
-        System.out.println("-------------------While------------------------");
+        //-------------------While------------------------
 
-        System.out.println("------------------------------------------");
 
-        System.out.println("------------------do-While------------------------");
+        //------------------do-While------------------------
         // Uso do loop do-while para imprimir todos os números da lista
         int c = 0;
         do {
@@ -84,6 +80,6 @@ public class Loops {
             System.out.println(list.get(d));
             d++;
         } while (d < list.size());
-        System.out.println("------------------do-While------------------------");
+        //------------------do-While------------------------"
     }
 }

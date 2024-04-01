@@ -8,12 +8,8 @@ public class Users {
 
 // comportamentos
 // methodos/funçõess publicas
-    public String PrintName(){
-        return this.name;
-    }
-
-    public String PrintLastName(){
-        return this.lastName;
+    public String PrintFullName(){
+        return name + lastName;
     }
 
     public int PrintAge(){

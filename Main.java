@@ -15,17 +15,19 @@ public class Main {
 
         Users users = new Users();
 
-        System.out.println("------------------------------");
         users.age = 30;
         users.name = "Jonh";
         users.lastName = "Doe";
-        System.out.println("------------------------------");
 
-        System.out.println("Nome: " + users.PrintName());
-        System.out.println("Sobre Nome: " + users.PrintLastName());
-        System.out.println("Idade: " + users.PrintAge());
 
-        System.out.println("------------------------------");
+        String fullname = users.PrintFullName();
+        int age = users.PrintAge();
+
+        System.out.println("Nome Completo: " + fullname);
+        System.out.println("Idade: " + age);
+
+
+
 
     }
 
