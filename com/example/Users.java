@@ -6,6 +6,8 @@ public class Users {
     public String lastName;
     public int age;
 
+    private  long id = 2064546L;
+
 // comportamentos
 // methodos/funçõess publicas
     public String PrintFullName(){
@@ -15,4 +17,9 @@ public class Users {
     public int PrintAge(){
         return this.age;
     }
+
+    public  long printId(){
+        return  id;
+    }
+
 }
