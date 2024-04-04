@@ -2,11 +2,8 @@ package com.example;
 
 public class Car {
     public String brand;
-
     public int age;
-
     public String color;
-
     public String model;
     public double mileage;
 
@@ -25,20 +22,40 @@ public class Car {
         return this.brand;
     }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
     public int getAge() {
         return this.age;
     }
 
-    public String gtColor() {
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getColor() {
         return this.color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getModel() {
         return this.model;
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     public double getMiliegae() {
         return this.mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
     }
 
 

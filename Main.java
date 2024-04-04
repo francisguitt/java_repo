@@ -1,7 +1,7 @@
-import com.example.Car;
-import com.example.Users;
 
-import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
+import com.example.Car;
+import com.example.GetsSets;
+import com.example.Users;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,34 +32,59 @@ public class Main {
         System.out.println("Idade: " + age);
         System.out.println("Token: " + id);
 
-        System.out.println("###############################");
+        System.out.println("---------------------------------");
 
-        // Criando o objeto car apartir da classe Car.
+        // Criando o objeto car1 apartir da classe Car.
 
-        Car car = new Car( // Passando os valores para o construtor da classe Car.
-                "Chevrolet",
-                2012,
-                "Prata",
-                "Sedan",
-                12555);
+        Car car1 = new Car("Chevrolet", 2012, "Prata", "Sedan", 12555);
+//        // Criando o objeto car2 apartir da classe Car.
+        Car car2 = new Car("Ford", 2012, "Preto", "Sedan", 1200);
+
+        // sets
+        car1.setBrand("Fiat");
+        car1.setAge(2010);
+        car1.setColor("verde");
 
 
         // Inicializando as variaveis com  os methodos da classe Car.
-        String brand = car.getBrand();
-        int carage = car.getAge();
-        String color = car.gtColor();
-        String model = car.getModel();
-        double miliage = car.getMiliegae();
+        String brand1 = car1.getBrand();
+        int carage1 = car1.getAge();
+        String color1 = car1.getColor();
+        String model1 = car1.getModel();
+        double miliage1 = car1.getMiliegae();
 
-        // printando os resultados na tela.
-        System.out.println("Marca: " + brand);
-        System.out.println("Ano: " + carage);
-        System.out.println("cor: " + color);
-        System.out.println("modelo: " + model);
-        System.out.println("Quilometragem: " + miliage);
+        String brand2 = car2.getBrand();
+        int carage2 = car2.getAge();
+        String color2 = car2.getColor();
+        String model2 = car2.getModel();
+        double miliage2 = car2.getMiliegae();
+
+
+        System.out.println("Marca: " + brand1);
+        System.out.println("Ano: " + carage1);
+
+        System.out.println("-----------------------------------");
+
+        System.out.println("Marca: " + brand2);
+        System.out.println("Ano: " + carage2);
+
+
+        System.out.println("----------------GetsSets-------------------");
+
+        GetsSets getsSets = new GetsSets();
+
+        getsSets.setItem("Arroz");
+        getsSets.setDescription("arroz tio joão o melhor arroz !");
+        getsSets.setPrice(45.00);
+
+        String item = getsSets.getItem();
+        String description = getsSets.getDescriptions();
+        double price = getsSets.getPrice();
+
+        System.out.println("Item: " + item);
+        System.out.println("Descrição: " + description);
+        System.out.println("Preço: " + "R$ " + price);
 
 
     }
-
-
 }
