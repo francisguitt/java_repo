@@ -1,6 +1,6 @@
 
 import com.example.Car;
-import com.example.GetsSets;
+import com.example.GetterSetter;
 import com.example.Users;
 
 public class Main {
@@ -71,15 +71,17 @@ public class Main {
 
         System.out.println("----------------GetsSets-------------------");
 
-        GetsSets getsSets = new GetsSets();
 
-        getsSets.setItem("Arroz");
-        getsSets.setDescription("arroz tio joão o melhor arroz !");
-        getsSets.setPrice(45.00);
 
-        String item = getsSets.getItem();
-        String description = getsSets.getDescriptions();
-        double price = getsSets.getPrice();
+        GetterSetter gettersSetters = new GetterSetter();
+
+        gettersSetters.setItem("Arroz");
+        gettersSetters.setDescription("arroz tio joão o melhor arroz !");
+        gettersSetters.setPrice(45.00);
+
+        String item = gettersSetters.getItem();
+        String description = gettersSetters.getDescriptions();
+        double price = gettersSetters.getPrice();
 
         System.out.println("Item: " + item);
         System.out.println("Descrição: " + description);

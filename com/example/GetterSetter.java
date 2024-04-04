@@ -1,6 +1,6 @@
 package com.example;
 
-public class GetsSets {
+public class GetterSetter {
     private String item;
     private String descriptions;
     private double price;
